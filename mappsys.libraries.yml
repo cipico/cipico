@@ -1,0 +1,6 @@
+global:
+  js:
+    assets/bulma_extension.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

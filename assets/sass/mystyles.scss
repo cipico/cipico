@@ -1,0 +1,456 @@
+@charset "utf-8";
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+$primary: #089F99;
+@import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/bulma-checkradio/dist/css/bulma-checkradio.sass";
+
+textarea{
+    padding: 5px;
+}
+input:focus{
+    outline-color: #009f9a;
+}
+.content-header{
+    background-color: #089F99;
+}
+.section{
+    padding-top: 1em;
+}
+#block-breadcrumbs{
+    margin-bottom: 1em;
+}
+.navbar-item img{
+    max-height: 55px;
+}
+.navbar-brand img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+a{
+    color: #009f9a !important;
+}
+a:hover{
+    color:#92d1cf;
+}
+#toolbar-bar {
+    background-color: #3E3E3E;
+}
+#block-mappsys-account-menu li{
+    height: 100%;
+    display: table-cell;
+}
+#block-mappsys-account-menu li a{
+    height: 100%;
+
+}
+#block-mappsys-account-menu{
+
+    display:         flex;
+    align-items: center;
+}
+#block-mappsys-account-menu a:hover{
+
+    background-color: #214946;
+}
+#block-mappsys-account-menu a:active, #block-mappsys-account-menu a:focus{
+
+    background-color: #7BC3BD;
+    color: #214946;
+}
+#block-mappsys-account-menu .is-active{
+    background-color: #7BC3BD;
+    color: #214946;
+}
+.navbar-brand.navbar-item:hover{
+    background-color:none;
+}
+.navbar-menu .navbar-item:hover{
+    background-color: #214946;
+}
+
+#block-mappsys-local-tasks li a{
+    background-color: white;
+    opacity: 0.7;
+    margin-right: 1px;
+}
+#block-mappsys-local-tasks li .is-active{
+    background-color: white;
+    opacity: 1;
+}
+
+
+#block-mappsys-local-tasks .tabs.is-boxed{
+    color: red;
+    margin-bottom: 0;
+}
+.panel-heading{
+    background-color: #7BC3BD;
+}
+.column.is-2, .column.is-2-tablet {
+    flex: none;
+     width: unset;
+}
+.helpicon{
+    color: #089F99 !important;
+    font-size: larger !important;
+}
+// override civicrm css
+
+
+#civicrm-menu, #civicrm-menu a{
+    background-color: #3E3E3E !important;
+    color: #7BC3BD !important;
+}
+#block-fulltextsearch .crm-form-text{
+    min-width: 200px !important;
+    min-height: 30px !important;
+    border-radius: 5px !important;
+}
+#block-fulltextsearch .helpicon{
+    color: white !important;
+}
+#fulltext_submit {
+    border: 1px solid white !important;
+}
+.form-select{
+    border-radius: 5px !important;
+    min-height: 20px !important;
+    font-size: larger !important;
+
+}
+.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .tabs:not(:last-child) {
+margin-bottom: 1rem;
+}
+// all inputs for civicrm
+.ui-dialog-titlebar .ui-button{
+    margin: -10px 0 0 0 !important;
+    position: absolute !important;
+    display: inline-block !important;
+}
+ .crm-button,.ui-button {
+    text-shadow: none !important;
+    background: none !important;
+    background-color: none !important;
+    border: none !important;
+    position:relative !important;
+    align-items: center !important;
+    background-color: #089F99 !important;
+    text-shadow: none !important;
+    border: none !important;
+    padding: 10px !important;
+    margin: 5px !important;
+    color: white !important;
+}
+
+.crm-button:hover , a.button:hover,.ui-button:hover {
+    background-color: #214946 !important;
+}
+
+.crm-button .crm-form-submit{
+    background-color: none !important;
+    text-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+.crm-button .crm-form-submit:focus{
+    background-color: none !important;
+    text-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.crm-form-submit{
+    background-color: none !important;
+    text-shadow: none !important;
+    border: none !important;
+
+}
+.crm-form-submit:hover{
+    background-color: #214946 !important;
+}
+
+.crm-container span.crm-button {
+    display: initial !important;
+    float: none !important;
+}
+.crm-container span.crm-button i{
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.crm-container span.crm-button input{
+    padding-left: 5px !important;
+}
+.crm-submit-buttons{
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+
+.crm-container input, select{
+    border-radius: 5px !important;
+    min-height: 20px !important;
+    // font-size: larger !important;
+    width: auto !important;
+}
+.widget-wrapper .widget-controls{
+    background-color: #009f9a !important;
+    color: white !important;
+}
+.widget-wrapper .widget-controls a{
+    color: white !important;
+}
+.ui-dialog-titlebar{
+    background-color: #009f9a !important;
+}
+.crm-contact-tabs-list{
+    background-color: white !important;
+    border: none !important;
+    padding-bottom: 5px !important;
+}
+
+#block-mappsys-account-menu .is-active{
+    background-color: #7BC3BD;
+    color: #214946;
+    border-bottom: 1px solid red !important;
+}
+.crm-tab-button.ui-state-active{
+    background-color: #7BC3BD !important;
+    color: #214946 !important;
+    border-bottom: 1px solid #c5c5c5 !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+}
+.crm-tab-button{
+    border-bottom: 1px solid #c5c5c5 !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+}
+.crm-tab-button.ui-state-active *{
+    color: #214946 !important;
+}
+.crm-container .button{
+    background-color: #009f9a !important;
+    color: white !important;
+    max-width: initial !important;
+    max-height: initial !important;
+    width: auto !important;
+    // display: flex !important;
+    text-shadow: none !important;
+}
+.crm-container .button::before{
+    height: 0 !important;
+}
+.delete-button{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.delete-button div{
+    margin-right: 15px !important;
+}
+.crm-accordion-body{
+    padding-left: 15px !important;
+}
+
+.crm-container .button::after{
+    content: none !important;
+}
+
+a:hover .crm-i.fa-trash, .crm-container .crm-button:hover .crm-i.fa-trash, .crm-container .crm-hover-button:hover .crm-i.fa-trash, .crm-container span:hover > .crm-i.fa-trash, .crm-i.crm-i-red{
+    color: #EA4568 !important;
+}
+
+.crm-summary-row {
+    background-color: #E7F4F3 !important;
+}
+.crm-inline-edit-form .crm-summary-row, .crm-inline-edit-form .crm-label,.crm-inline-edit-form td {
+    background-color: white !important;
+}
+.crm-inline-edit-form{
+    background-color: #7BC3BD !important;
+}
+.crm-inline-button{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin: 0 !important;
+}
+.crm-container .crm-form-block{
+    background-color: white !important;
+}
+
+.crm-container .crm-accordion-header.active{
+    background-color: #214946 !important;
+    color: white !important ;
+}
+.crm-accordion-header{
+    background-color: #92d1cf !important;
+    color: #3E3E3E !important;
+}
+.select2-drop, .select2-container-active{
+    border-color: #089F99 !important;
+}
+.select2-container-active .select2-choice, .select2-container-active .select2-choices{
+    border-color: #089F99 !important;
+}
+.select2-choice:hover{
+    border-color: #089F99 !important;
+}
+.select2-highlighted{
+    background-color: #214946 !important;
+}
+.select2-container .select2-choice {
+    background-image: none !important;
+    background-color: white !important;
+}
+
+.select2-container .select2-choice {
+    min-height: 30px !important;
+    width: 120%  !important;
+}
+
+.crm-form-entityref,.crm-ajax-select,.crm-form-entityref .select2-choice, .select2-with-searchbox, .crm-ajax-select .select2-choice{
+    width: 250px  !important;
+}
+.select2-results .select2-ajax-error, .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit{
+    background-color: white !important;
+}
+.crm-entityref-filter-key{
+    background-color: white !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.crm-entityref-filter-value{
+    background-color: white !important;
+    width: 80% !important;
+    max-width: 80% !important;
+}
+.crm-entityref-filter-key:hover, .crm-entityref-filter-key:focus{
+    border-color: #089F99 !important;
+    outline-color: #089F99 !important;
+}
+
+.crm-entityref-filter-value:hover, .crm-entityref-filter-value:focus{
+    border-color: #089F99 !important;
+    outline-color: #089F99 !important;
+}
+
+.crm-container span.crm-hover-button, .crm-container a.crm-hover-button {
+    margin-left: 15px !important;
+}
+.crm-container span.crm-hover-button, .crm-container a.crm-hover-button:hover {
+    background: none;
+    border-color: #089F99;
+}
+
+.select2-container-multi{
+    width: auto !important;
+    min-width: initial !important;
+}
+.select2-container-multi .select2-results{
+    width: 100% !important;
+    min-width: initial !important;
+}
+
+.crm-section td{
+ text-align: left !important;
+ padding-left: 10px !important;
+ padding-right: 10px !important;
+}
+.crm-select2{
+    margin-right: 15px !important;
+}
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 10px !important;
+    height: 10px !important;
+    min-height: initial !important;
+    padding: 3px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #089F99;
+    background-color: white;
+    border-radius: 50% !important;
+}
+input[type="radio"]:focus{
+    outline: none !important;
+}
+input[type="radio"]:checked {
+    background-color: #089F99;
+}
+
+.crm-form-select{
+    min-height: 30px !important;
+}
+
+
+.crm-form-checkbox:not([name="is_email_receipt"]) {
+    @extend .is-checkradio;
+}
+
+.crm-contribution-form-block td {
+    width: none !important;
+    // padding-right: 30px !important;
+}
+
+.crm-inline-error{
+    margin-left: 10px !important;
+}
+.crm-pager{
+    background-color: #E7F4F3 !important;
+    margin-bottom: 15px !important;
+}
+.crm-pager .element-right{
+    display: flex !important;
+    align-items: center !important;
+
+}
+.crm-pager .crm-pager-nav{
+    background-color: #E7F4F3 !important;
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    
+}
+.ui-spinner{
+    display: table !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+.ui-spinner a{
+    display: table-cell !important;
+}
+input.crm-form-submit{
+    background-color: #089F99 !important;
+}
+#civicrm-menu a:hover{
+    background-color: #089F99 !important;
+    color: white !important;
+}
+.crmMailing .preview-popup, .crmMailing .preview-contact, .crmMailing .preview-group {
+height: 100% !important;
+}
+td.label{
+    width: 100% !important;
+}
+// input[type=checkbox] {
+//     @extend .is-checkradio;
+//   }
+// .crm-container .status {
+
+//     background-color: #7BC3BD !important;
+//     border-color: #089F99 !important;
+// }
+
+// #block-mappsys-local-tasks .tabs.is-boxed .primary{
+//     color: red !important;
+//     margin-bottom: 2px !important;
+// }crm-summary-row
+
+// Add a serif family
