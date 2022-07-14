@@ -4,7 +4,7 @@
  * @file
  * Theme functions.
  */
-function mappsys_element_info_alter(array &$types) {
+function cipico_element_info_alter(array &$types) {
     $test = "";
     if (isset($types['table'])) {
       $types['table']['#attached']['library'][] = 'your_module/library_name';

@@ -39,6 +39,6 @@ libraries-override:
     
 
 # Information added by Drupal.org packaging script on 2020-02-05
-version: '8.x-1.0'
+version: '8.x-1.1'
 project: 'bulma'
 datestamp: 1580867355
