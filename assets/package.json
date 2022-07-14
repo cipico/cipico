@@ -1,5 +1,5 @@
 {
-  "name": "mappsys",
+  "name": "cipico",
   "version": "1.0.0",
   "description": "A subtheme of Octavia for use with the Bulma Drupal distribution",
   "main": "sass/mystyles.scss",
@@ -8,10 +8,10 @@
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
-  "author": "Some One",
+  "author": "Nico Friedrich",
   "license": "GPL",
   "devDependencies": {
-    "bulma": "^0.7.2",
+    "bulma": "^0.9.4",
     "bulma-extensions": "^3.0.0",
     "node-sass": "^4.9.4"
   },
