@@ -1,5 +1,5 @@
-# MappSys
-MappSys is a subtheme of base theme Bulma for Drupal. 
+# CIPICO
+CIPICO is a subtheme of base theme Bulma for Drupal. 
 It has Bulma CSS framework, Sass, and Font Awesome built-in.
 
 ## Features
