@@ -3,7 +3,7 @@ description: A theme based on Bulma.
 type: theme
 base theme: bulma
 package: Core
-core: 9.x
+core: ^8.8 || ^9
 
 
 regions:
