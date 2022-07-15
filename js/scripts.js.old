@@ -1,0 +1,151 @@
+var templates = new Array(59, 60, 69, 71, 68, 65, 67); // List of affected templates
+var userData = new Array();
+
+var greeting = "";
+var anrede;
+var editor_data;
+var custom_62;
+var custom_67;
+var custom_68;
+var new_html;
+var clicked = false;
+
+jQuery(document).ready(function($) {
+    $('#contactDetails div:first-child').addClass("narrowform");
+    $('.description').css( "display", "inline-block");
+    $('.description').css( "maxWidth", "450px");
+    
+    if(getParameterByName('cid') == null | getParameterByName('cid') == undefined || getParameterByName('cid') == "") {
+        $('#custom_prev_button').css('display', 'none');
+        $('#custom_prev_button').parent().css('display', 'none');
+    } else {
+        var cid = getParameterByName('cid');    
+        
+        CRM.api('Contact', 'get', {'contact_id': cid, 'sequential': 1,},{
+            success: function(data) {
+                userData = [];
+                cj.each(data['values'], function(key, entry) {
+                    if(entry['contact_type'] == "Organization"){
+                        userData.push(entry['contact_type']);        
+                        CRM.api('Contact', 'getvalue', {'contact_id': cid, 'sequential': 1, 'return': 'custom_62'},{
+                            success: function(data) {
+                                userData.push(data['result']);
+                                CRM.api('Contact', 'getvalue', {'contact_id': cid, 'sequential': 1, 'return': 'custom_68'},{
+                                    success: function(data) {
+                                        userData.push(data['result']);
+                                        CRM.api('Contact', 'getvalue', {'contact_id': cid, 'sequential': 1, 'return': 'custom_67'},{
+                                            success: function(data) {
+                                                userData.push(data['result']);
+                                                processData(userData)
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+                    } else {
+                        userData.push(entry['contact_type']);    
+                        userData.push(entry['gender_id']);    
+                        userData.push(entry['last_name']);  
+                        processData(userData)
+                    }
+                    
+                });
+                 
+            }
+        });
+    }
+    
+    $('#custom_prev_button').click(function() {
+        processCall();
+    });
+    
+    $('#closeMailPreview').click(function(){
+        closePreview();   
+    });
+});
+
+function showPreview(){
+    jQuery('#mail-preview').fadeIn(500, function(){
+        jQuery('#mprevcontent').fadeIn(500, function(){
+            jQuery('#closeMailPreview').css('visibility', 'visible');
+        });
+        jQuery('#mprevlightbox').css('overflow-y','scroll');
+    });
+}    
+
+function closePreview(){    
+    jQuery('#closeMailPreview').css('visibility', 'hidden');
+    jQuery('#mprevcontent').fadeOut(500, function(){
+        jQuery('#mail-preview').fadeOut(500, function(){});
+    });
+}
+
+function processData(userData){
+    if(userData[0] == 'Organization') {
+        var anrede = userData[1];
+        if(anrede == 'Sehr geehrte Damen und Herren'){
+            greeting = anrede;
+        } else {
+            switch(userData[2]){
+                case "1":
+                    custom_68 = " Prof."; 
+                break;
+
+                case "2":
+                    custom_68 = " Dr.";
+                break;
+
+                case "3":
+                    custom_68 = " Prof. Dr.";
+                break;
+
+                default:
+                    custom_68 = "";
+                break;
+            }
+            
+            var last_name = userData[3];
+            greeting = anrede + custom_68 + " " + last_name;
+        }
+    } else {
+        if(userData[1] == 1){
+            greeting = "Sehr geehrte Frau " + userData[2];   
+        } else {
+            greeting = "Sehr geehrter Herr " + userData[2];
+        }    
+    }
+    
+    if(clicked == true) {
+        CRM.alert('Daten geladen, Vorschau verfügbar!','','success');    
+        processCall();
+    }
+}
+
+function processCall() {
+    if(greeting != ""){
+        var selectVal = parseInt(jQuery("#template").val()); // Get Value of Template Select Field
+        if(jQuery.inArray(selectVal, templates ) > -1){ // If selected template is in the list
+            var cid = getParameterByName('cid');
+            editor_data = CKEDITOR.instances['html_message'].getData(); // Loads Editor-Content 
+            var new_html = editor_data;
+            if(selectVal == 60) {
+                new_html = new_html.replace('{contact.email_greeting}', greeting); 
+            } else if(selectVal == 59) {
+                new_html = new_html.replace('{contact.custom_62}{contact.custom_68}{contact.custom_67}', greeting);     
+            }    
+            jQuery('#mprevcontent').html(new_html);
+            showPreview();
+        }
+    } else {
+        CRM.alert('Bitte warten, Daten werden geladen');  
+        clicked = true;
+    }
+}
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
