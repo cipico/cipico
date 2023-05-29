@@ -88,11 +88,11 @@ a:hover{
     background-color: #3E3E3E;
 }
 
-#block-cipico-account-menu li{
+#block-useraccountmenu li{
     height: 100%;
     display: table-cell;
 }
-#block-cipico-account-menu li a{
+#block-useraccountmenu li a{
     height: 100%;
 
 }
@@ -104,22 +104,22 @@ a:hover{
     justify-content: flex-end;
 }
 
-#block-cipico-account-menu{
+#block-useraccountmenu{
     align-items: center;
     order: 2;
 }
 
-#block-cipico-account-menu a:hover{
+#block-useraccountmenu a:hover{
 
     background-color: $primary_dark;
 }
 
-#block-cipico-account-menu a:active, #block-cipico-account-menu a:focus{
+#block-useraccountmenu a:active, #block-useraccountmenu a:focus{
     //background-color: #75D7FF;
     color: $primary_dark;
 }
 
-#block-cipico-account-menu .is-active{
+#block-useraccountmenu .is-active{
     background-color: white;
     color: $secondary;
 //     border-bottom: 1px solid red !important;
@@ -134,7 +134,7 @@ a:hover{
     color: $primary_dark !important;
 }
 
-#block-cipico-account-menu .menu-list li a:hover{
+#block-useraccountmenu .menu-list li a:hover{
     background-color: $secondary !important;
     color: $primary_dark !important;
 }
@@ -1076,15 +1076,18 @@ legend{
     padding: 0.5em !important;
 }
 
-//.crm-container .crm-accordion-header.active{
+// .crm-container .crm-accordion-header.active{
 //    background-color: $primary_dark !important;
 //    color: $secondary !important ;
-//}
+// }
 
+.crm-container .crm-form-block{
+    font-size: unset;
+}
 .crm-accordion-header{
     background-color: #B4E7F9 !important;
     color: #3E3E3E !important;
-    margin-top: 1em !important;
+    // margin-top: 1em !important;
     font-weight: normal !important;
 }
 

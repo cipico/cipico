@@ -3,7 +3,7 @@ description: A theme based on Bulma.
 type: theme
 base theme: bulma
 package: Core
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 
 
 regions:
@@ -39,6 +39,6 @@ libraries-override:
     
 
 # Information added by Drupal.org packaging script on 2020-02-05
-version: '9.x-1.1'
+version: '10.x-1.0-rc1'
 project: 'bulma'
 datestamp: 1580867355
