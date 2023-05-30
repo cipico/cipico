@@ -1,8 +1,9 @@
 global-styling:
   version: 1.x
   css:
-    js/fpsHelper.min.css: {}
-    js/helper.css: {}
+    theme:
+      js/fpsHelper.min.css: {}
+      js/helper.css: {}
   js:
     assets/bulma_extension.js: {}
     js/fpsHelper.min.js: {}
