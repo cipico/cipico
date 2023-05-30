@@ -1,4 +1,5 @@
-global:
+global-styling:
+  version: 1.x
   js:
     assets/bulma_extension.js: {}
     js/fpsHelper.min.js: {}
