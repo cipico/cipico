@@ -1,14 +1,14 @@
 global-styling:
   version: 1.x
+  css:
+    js/fpsHelper.min.css: {}
+    js/helper.css: {}
   js:
     assets/bulma_extension.js: {}
     js/fpsHelper.min.js: {}
     js/helper.js: {}
     js/moment.min.js: {}
     js/spin.js: {}
-  css:
-    js/fpsHelper.min.css: {}
-    js/helper.css: {}
   dependencies:
     - core/jquery
     - core/jquery.once
