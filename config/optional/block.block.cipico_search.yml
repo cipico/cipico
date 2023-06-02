@@ -4,9 +4,9 @@ dependencies:
   module:
     - search
   theme:
-    - mappsys
-id: mappsys_search
-theme: mappsys
+    - cipico
+id: cipico_search
+theme: cipico
 region: header_search
 weight: -1
 provider: null

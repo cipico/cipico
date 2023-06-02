@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - mappsys
-id: mappsys_branding
-theme: mappsys
+    - cipico
+id: cipico_branding
+theme: cipico
 region: navbar_branding
 weight: 0
 provider: null

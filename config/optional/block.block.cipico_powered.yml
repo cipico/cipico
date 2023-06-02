@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - mappsys
-id: mappsys_powered
-theme: mappsys
+    - cipico
+id: cipico_powered
+theme: cipico
 region: footer
 weight: -10
 provider: null

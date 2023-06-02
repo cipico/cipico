@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - mappsys
-id: mappsys_page_title
-theme: mappsys
+    - cipico
+id: cipico_page_title
+theme: cipico
 region: header
 weight: 0
 provider: null

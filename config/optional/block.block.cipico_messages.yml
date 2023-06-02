@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - mappsys
-id: mappsys_messages
-theme: mappsys
+    - cipico
+id: cipico_messages
+theme: cipico
 region: help
 weight: 0
 provider: null

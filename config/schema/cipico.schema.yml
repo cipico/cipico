@@ -1,6 +1,6 @@
-# Schema for the configuration files of the MappSys theme.
+# Schema for the configuration files of the cipico theme.
 
-mappsys.settings:
+cipico.settings:
   type: theme_settings
   label: 'Bulma settings'
   mapping:

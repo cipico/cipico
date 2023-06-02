@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - mappsys
-id: mappsys_local_tasks
-theme: mappsys
+    - cipico
+id: cipico_local_tasks
+theme: cipico
 region: header_tabs
 weight: -40
 provider: null

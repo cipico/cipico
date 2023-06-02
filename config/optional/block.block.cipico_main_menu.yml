@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - mappsys
-id: mappsys_main_menu
-theme: mappsys
+    - cipico
+id: cipico_main_menu
+theme: cipico
 region: primary_menu
 weight: 1
 provider: null
