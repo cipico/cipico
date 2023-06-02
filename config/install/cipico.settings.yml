@@ -3,6 +3,9 @@ general:
   icon: 1
   icon_type: 1
   menu: 'main'
+logo:
+  path: 'themes/contrib/cipico/logo.png'
+  use_default: false
 button:
   colorize: 1
   size: '0'

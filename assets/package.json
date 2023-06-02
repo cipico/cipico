@@ -13,7 +13,7 @@
   "devDependencies": {
     "bulma": "^0.9.4",
     "bulma-extensions": "^3.0.0",
-    "node-sass": "^4.9.4"
+    "node-sass": "^9.0.0"
   },
   "dependencies": {
     "bulma-checkradio": "^1.1.1"
