@@ -28,4 +28,4 @@ table:
   narrow: 0
 cdn:
   bulma:
-    version: '0.9.1'
+    version: '0.9.4'
