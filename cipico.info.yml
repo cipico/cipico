@@ -31,7 +31,6 @@ libraries:
   - cipico/global-styling
 
 libraries-override:
-  
   bulma/global:
     css:
       - assets/mystyles.css
