@@ -8821,8 +8821,7 @@ a:hover {
 .navbar-menu {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-end; }
+  align-items: center; }
 
 #block-useraccountmenu {
   align-items: center;
@@ -8859,7 +8858,7 @@ a:hover {
   opacity: 0.7; }
 
 .navbar-item.is-active {
-  background-color: white;
+  background-color: white !important;
   margin-right: 1px;
   font-size: 1rem;
   white-space: nowrap;
