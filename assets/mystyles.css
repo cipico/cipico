@@ -8821,7 +8821,8 @@ a:hover {
 .navbar-menu {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  justify-content: flex-start; }
 
 #block-useraccountmenu {
   align-items: center;
