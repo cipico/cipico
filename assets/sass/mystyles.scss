@@ -306,11 +306,19 @@ a:hover{
     font-size: larger !important;
 }
 // override civicrm css
-
+.panel-block{
+    display: block;
+    padding: 10px !important;
+}
+.field.is-grouped {
+    padding: 10px !important;
+}
 .ui-state-active a {
     color: white !important;
 }
-
+#js-navbar-menu{
+    justify-content: flex-end !important;
+}
 #civicrm-menu, #civicrm-menu a{
     background-color: #3E3E3E !important;
     color: #75D7FF !important;
