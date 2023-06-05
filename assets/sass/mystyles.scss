@@ -100,7 +100,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start !important;
+    justify-content: flex-start;
 }
 
 #block-useraccountmenu{
@@ -165,6 +165,7 @@ a:hover{
 
 .navbar-end{
     order: 1;
+    justify-content: flex-start;
 }
 
 #block-cipico-local-tasks li a{
@@ -305,6 +306,10 @@ a:hover{
     font-size: larger !important;
 }
 // override civicrm css
+
+.ui-state-active a {
+    color: white !important;
+}
 
 #civicrm-menu, #civicrm-menu a{
     background-color: #3E3E3E !important;

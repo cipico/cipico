@@ -8822,7 +8822,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start !important; }
+  justify-content: flex-start; }
 
 #block-useraccountmenu {
   align-items: center;
@@ -8876,7 +8876,8 @@ a:hover {
   color: #2D2D2D !important; }
 
 .navbar-end {
-  order: 1; }
+  order: 1;
+  justify-content: flex-start; }
 
 #block-cipico-local-tasks li a {
   background-color: white;
@@ -8988,6 +8989,9 @@ a:hover {
 .helpicon {
   color: #009EE0 !important;
   font-size: larger !important; }
+
+.ui-state-active a {
+  color: white !important; }
 
 #civicrm-menu, #civicrm-menu a {
   background-color: #3E3E3E !important;
