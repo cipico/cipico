@@ -8845,6 +8845,32 @@ a:hover {
   background-color: white;
   color: #2D2D2D !important; }
 
+.navbar-item {
+  background-color: white;
+  margin-right: 1px;
+  font-size: 1rem;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  opacity: 0.7; }
+
+.navbar-item .is-active {
+  background-color: white;
+  margin-right: 1px;
+  font-size: 1rem;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  opacity: 0.1; }
+
 #block-useraccountmenu .menu-list li a:hover {
   background-color: white !important;
   color: #2D2D2D !important; }
