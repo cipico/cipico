@@ -1,4 +1,26 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
+
+/*Remove BootStrap's default margin-bottom on .form-group*/
+#bootstrap-theme h1, #bootstrap-theme .h1, #bootstrap-theme h2, #bootstrap-theme .h2, #bootstrap-theme h3, #bootstrap-theme .h3 {
+	margin-top: unset; 
+	margin-bottom: unset;
+}
+
+#bootstrap-theme h1, #bootstrap-theme h2, #bootstrap-theme h3, #bootstrap-theme h4, #bootstrap-theme h5, #bootstrap-theme h6, #bootstrap-theme .h1, #bootstrap-theme .h2, #bootstrap-theme .h3, #bootstrap-theme .h4, #bootstrap-theme .h5, #bootstrap-theme .h6 {
+  font-family: unset;
+  font-weight: bold;
+  color: unset;
+  line-height: unset;
+}
+
+#bootstrap-theme legend {
+  margin-bottom: 10px;
+  font-size: unset;
+}
+#bootstrap-theme td, #bootstrap-theme th {
+	padding: unset;
+}
+
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
