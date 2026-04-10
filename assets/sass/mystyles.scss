@@ -9,6 +9,27 @@ $progress-indeterminate-duration: 3s;
 
 $secondary: white;
 $primary_dark: #2D2D2D;
+#bootstrap-theme td, #bootstrap-theme th {
+	padding: 3px 18px 3px 10px;
+}
+#bootstrap-theme h1, #bootstrap-theme .h1, #bootstrap-theme h2, #bootstrap-theme .h2, #bootstrap-theme h3, #bootstrap-theme .h3 {
+	margin-top: unset;
+	margin-bottom: unset;
+}
+#bootstrap-theme h1, #bootstrap-theme h2, #bootstrap-theme h3, #bootstrap-theme h4, #bootstrap-theme h5, #bootstrap-theme h6, #bootstrap-theme .h1, #bootstrap-theme .h2, #bootstrap-theme .h3, #bootstrap-theme .h4, #bootstrap-theme .h5, #bootstrap-theme .h6 {
+	font-family: unset;
+	font-weight: unset;
+	line-height: unset;
+	color: unset;
+}
+#bootstrap-theme h3, #bootstrap-theme .h3 {
+	font-size: 15px;
+}
+#bootstrap-theme legend {
+	margin-bottom: 10px;
+    font-size: unset;
+    width: unset;
+}
 
 .hero.is-primary{
     background-color: $primary !important;
@@ -641,7 +662,6 @@ div.panel-block label{
 
 .widget-wrapper .widget-controls a, .crm-dashlet-header a{
     color: $secondary !important;
-    margin-top: 0.2em !important;
 }
 
 .crm-dashlet-header a.crm-i{
@@ -735,6 +755,9 @@ div.panel-block label{
 .crm-content{
     margin-left: 16.5em !important;
     font-size: 12px !important;
+}
+.crm-container h3 {
+    font-weight: bold !important;
 }
 
 .crm-container textarea.huge{

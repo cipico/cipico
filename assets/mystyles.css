@@ -1,26 +1,4 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
-
-/*Remove BootStrap's default margin-bottom on .form-group*/
-#bootstrap-theme h1, #bootstrap-theme .h1, #bootstrap-theme h2, #bootstrap-theme .h2, #bootstrap-theme h3, #bootstrap-theme .h3 {
-	margin-top: unset; 
-	margin-bottom: unset;
-}
-
-#bootstrap-theme h1, #bootstrap-theme h2, #bootstrap-theme h3, #bootstrap-theme h4, #bootstrap-theme h5, #bootstrap-theme h6, #bootstrap-theme .h1, #bootstrap-theme .h2, #bootstrap-theme .h3, #bootstrap-theme .h4, #bootstrap-theme .h5, #bootstrap-theme .h6 {
-  font-family: unset;
-  font-weight: bold;
-  color: unset;
-  line-height: unset;
-}
-
-#bootstrap-theme legend {
-  margin-bottom: 10px;
-  font-size: unset;
-}
-#bootstrap-theme td, #bootstrap-theme th {
-	padding: unset;
-}
-
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
@@ -8772,6 +8750,27 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border-color: #fff !important;
   background-color: #fff !important; }
 
+#bootstrap-theme td, #bootstrap-theme th {
+  padding: 3px 18px 3px 10px; }
+
+#bootstrap-theme h1, #bootstrap-theme .h1, #bootstrap-theme h2, #bootstrap-theme .h2, #bootstrap-theme h3, #bootstrap-theme .h3 {
+  margin-top: unset;
+  margin-bottom: unset; }
+
+#bootstrap-theme h1, #bootstrap-theme h2, #bootstrap-theme h3, #bootstrap-theme h4, #bootstrap-theme h5, #bootstrap-theme h6, #bootstrap-theme .h1, #bootstrap-theme .h2, #bootstrap-theme .h3, #bootstrap-theme .h4, #bootstrap-theme .h5, #bootstrap-theme .h6 {
+  font-family: unset;
+  font-weight: unset;
+  line-height: unset;
+  color: unset; }
+
+#bootstrap-theme h3, #bootstrap-theme .h3 {
+  font-size: 15px; }
+
+#bootstrap-theme legend {
+  margin-bottom: 10px;
+  font-size: unset;
+  width: unset; }
+
 .hero.is-primary {
   background-color: #009EE0 !important; }
 
@@ -9284,8 +9283,7 @@ div.panel-block label {
   font-size: 1.2em !important; }
 
 .widget-wrapper .widget-controls a, .crm-dashlet-header a {
-  color: white !important;
-  margin-top: 0.2em !important; }
+  color: white !important; }
 
 .crm-dashlet-header a.crm-i {
   opacity: .7 !important; }
@@ -9360,6 +9358,9 @@ div.panel-block label {
 .crm-content {
   margin-left: 16.5em !important;
   font-size: 12px !important; }
+
+.crm-container h3 {
+  font-weight: bold !important; }
 
 .crm-container textarea.huge {
   width: 100%; }
