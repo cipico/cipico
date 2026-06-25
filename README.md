@@ -1,22 +1,27 @@
-# CIPICO
-CIPICO is a subtheme of base theme Bulma for Drupal. 
-It has Bulma CSS framework, Sass, and Font Awesome built-in.
+# CIPICO SA Theme
+
+A Bulma-based theme for CiviCRM Standalone.
 
 ## Features
-1. Components and plugins from Bulma.
-2. Sass and Font Awesome built-in.
+- Bulma CSS framework with custom overrides for CiviCRM
+- Custom helper JS (spinners, messages)
+- Sass build pipeline with node-sass
 
 ## Installation
-After installing, you can optionally add the
-[Bulmaswath](https://jenil.github.io/bulmaswatch) themes. To do so,
-[download from GitHub](https://github.com/jenil/bulmaswatch) and extract to
-libraries/bulmaswatch, renaming the extracted directory as necessary.
+1. Place this extension in `CiviCRM/ext/cipicotheme`
+2. Install the extension: `cv ext:install com.fpsvisionary.cipicotheme`
+3. Set as active theme: `cv ev 'Civi::settings()->set("theme_backend", "cipico"); Civi::settings()->set("theme_frontend", "cipico");'`
+4. Clear caches: `cv flush`
+
+## Development
+```bash
+cd assets
+npm install
+npm run css-build
+```
 
 ## Links
-* Project Page:   http://vallic.com
-* Documentation:  http://vallic.com
-* Demo:           http://vallic.com
-* Support:        https://www.drupal.org/project/issues/bulma
+- Project Page: http://vallic.com
 
 ## License
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+GNU General Public License v2.0 or later

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<extension key="com.fpsvisionary.cipicotheme" type="module">
+  <file>cipico</file>
+  <name>CIPICO SA Theme</name>
+  <description>Standalone theme for CiviCRM based on Bulma</description>
+  <license>GPL-2.0-or-later</license>
+  <urls>
+    <url desc="Main">http://vallic.com</url>
+  </urls>
+  <author>
+    <full>Nico Friedrich</full>
+    <email>nico@vallic.com</email>
+  </author>
+  <version>1.0</version>
+  <comments>A Bulma-based theme for CiviCRM Standalone</comments>
+  <civix>
+    <namespace>CRM/Cipico</namespace>
+    <format>23.02.1</format>
+  </civix>
+  <mixins>
+    <mixin>smarty-v2@1.0.0</mixin>
+  </mixins>
+  <resources>
+    <resource src="assets/mystyles.css" />
+    <resource src="assets/overrides.css" />
+    <resource src="js/fpsHelper.min.css" />
+    <resource src="js/helper.css" />
+  </resources>
+</extension>

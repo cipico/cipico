@@ -1,6 +1,44 @@
 
-
 /*# sourceMappingURL=overrides.css.map */
-body{
-    background-color: red !important;
+
+.top-bar {
+  background-color: #fff;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.top-bar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.top-bar-brand img {
+  max-height: 50px;
+  display: block;
+}
+
+.top-bar-title {
+  color: #2D2D2D;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.hero.is-primary {
+  background-color: #009EE0 !important;
+}
+
+.hero .crm-page-title.hero-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.crm-page-title-wrapper {
+  display: none;
+}
+
+.standalone-page-padding {
+  padding: 1.5rem;
 }
