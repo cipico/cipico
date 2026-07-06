@@ -38,9 +38,10 @@ function cipico_civicrm_alterTemplateDir(&$templateDir, &$context) {
   $templateDir[] = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'templates';
 }
 
-function cipico_civicrm_config(&$config) {
-  $faviconUrl = CRM_Core_Resources::singleton()->getUrl('com.fpsvisionary.cipicotheme', 'favicon.ico');
-  CRM_Core_Region::instance('html-header')->add([
-    'markup' => '<link rel="icon" type="image/x-icon" href="' . $faviconUrl . '">',
-  ]);
+function cipico_civicrm_alterContent(&$content, $context) {
+  if (strpos($content, '</head>') !== FALSE) {
+    $faviconUrl = CRM_Core_Resources::singleton()->getUrl('com.fpsvisionary.cipicotheme', 'favicon.ico');
+    $faviconTag = "\n" . '<link rel="icon" type="image/x-icon" href="' . $faviconUrl . '">' . "\n";
+    $content = str_replace('</head>', $faviconTag . '</head>', $content);
+  }
 }
