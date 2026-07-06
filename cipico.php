@@ -37,3 +37,10 @@ function cipico_civicrm_alterBundle(CRM_Core_Resources_Bundle $bundle) {
 function cipico_civicrm_alterTemplateDir(&$templateDir, &$context) {
   $templateDir[] = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'templates';
 }
+
+function cipico_civicrm_config(&$config) {
+  $faviconUrl = CRM_Core_Resources::singleton()->getUrl('com.fpsvisionary.cipicotheme', 'favicon.ico');
+  CRM_Core_Region::instance('html-header')->add([
+    'markup' => '<link rel="icon" type="image/x-icon" href="' . $faviconUrl . '">',
+  ]);
+}
